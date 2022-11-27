@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="bg-slate-100 w-4/5 mx-auto p-10 m-10">
+        <div id="firstDiv" class="flex bg-white p-5">
+            <div class="flex items-center w-6/12">
+                    <img class="w-10 m" src="./img/iphone 14 pro.png" alt="">
+                    <h3 class="pl-3 font-bold ">iphone 14 pro</h3>
+            </div>
+            <div class="w-6/12 flex items-center ">
+                <div class="mx-auto flex items-center">
+                    <button id="minus">
+                        <i  class="fa-solid fa-minus "></i>
+                    </button>
+                    <input class="w-10 mx-2 " type="number"   name="" 
+                    value="1" id="input">
+                    <button id="plus">
+                        <i class="fa-solid fa-plus "></i>
+                    </button>
+                    <p class="mx-8">$ <span id="text">1000</span></p>
+                    <i id="cross" class="fa-solid fa-xmark text-red-600 text-2xl"></i>
+                </div>
+            </div>
+        </div>
+        <div id="secondDiv" class="flex bg-white p-5">
+            <div class="flex items-center w-6/12">
+                    <img class="w-10 m" src="./img/iphone 14.png" alt="">
+                    <h3 class="pl-3 font-bold ">iphone 14 </h3>
+            </div>
+            <div class="w-6/12 flex items-center ">
+                <div class="mx-auto flex items-center">
+                    <button id="product-minus">
+                        <i  class="fa-solid fa-minus "></i>
+                    </button>
+                    <input class="w-10 mx-2 " type="number"   name="" 
+                    value="1" id="product-input">
+                    <button id="product-plus">
+                        <i class="fa-solid fa-plus "></i>
+                    </button>
+                    <p class="mx-8">$ <span id="product-text">500</span></p>
+                    <i id="secondCross" class="fa-solid fa-xmark text-red-600 text-2xl"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-between bg-white mt-3 p-5">
+            <div class="">
+                <p>Subtotal : </p> <br>
+                <p>tax (10%) :</p>  <br>
+                <p>total :</p>
+            </div>
+            <div class="">
+                <p id="subtotal">$000</p> <br>
+                <p id="percentage">  $0</p> <br>
+                <p id="total"> $0000</p>
+            </div>
+        </div>
+        <div class="flex justify-end m-3">
+            <div  class="flex">
+                <button class="bg-green-400 text-rose-50 px-3 py-2 rounded ">check out</button>
+
+            </div>
+        </div>
+    </div>
+    <script src="shopping.js"></script>
+</body>
+</html>
